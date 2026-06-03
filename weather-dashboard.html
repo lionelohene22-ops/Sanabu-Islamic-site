@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="weather-dashboard.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Sanabu Islamic</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="joke-generator.html">Joke Generator</a></li>
+                    <li><a href="weather-dashboard.html">Weather</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Weather Dashboard 🌤️</h2>
+                <p>Get current weather and forecast information</p>
+                
+                <div class="weather-container">
+                    <!-- Search Section -->
+                    <div class="search-section">
+                        <input 
+                            type="text" 
+                            id="city-input" 
+                            class="city-search" 
+                            placeholder="Enter city name..." 
+                            autocomplete="off"
+                        >
+                        <button id="search-btn" class="btn btn-search">Search</button>
+                        <button id="location-btn" class="btn btn-location">📍 My Location</button>
+                    </div>
+
+                    <!-- Current Weather Section -->
+                    <div id="loading" class="loading" style="display: none;">
+                        <p>Loading weather data...</p>
+                    </div>
+
+                    <div id="error" class="error" style="display: none;">
+                        <p id="error-message">Unable to load weather data. Please try again.</p>
+                    </div>
+
+                    <div id="current-weather" class="current-weather" style="display: none;">
+                        <div class="weather-header">
+                            <h3 id="city-name"></h3>
+                            <p id="weather-date"></p>
+                        </div>
+                        <div class="weather-main">
+                            <div class="weather-icon-section">
+                                <img id="weather-icon" src="" alt="Weather Icon" class="weather-icon">
+                                <div class="temperature">
+                                    <span id="temp" class="temp-value"></span>
+                                    <span class="temp-unit">°C</span>
+                                </div>
+                            </div>
+                            <div class="weather-details">
+                                <p><strong>Condition:</strong> <span id="weather-condition"></span></p>
+                                <p><strong>Feels Like:</strong> <span id="feels-like"></span>°C</p>
+                                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                                <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</p>
+                                <p><strong>Pressure:</strong> <span id="pressure"></span> hPa</p>
+                                <p><strong>Visibility:</strong> <span id="visibility"></span> km</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Forecast Section -->
+                    <div id="forecast-section" class="forecast-section" style="display: none;">
+                        <h4>5-Day Forecast</h4>
+                        <div id="forecast-container" class="forecast-container">
+                            <!-- Forecast cards will be populated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>About This Weather Dashboard</h3>
+                    <p>This weather dashboard uses the <strong>Open-Meteo API</strong> (free, no API key required) to fetch real-time weather data and forecasts. Features include:</p>
+                    <ul>
+                        <li>🌍 Search weather by city name</li>
+                        <li>📍 Get weather for your current location</li>
+                        <li>🌡️ Current temperature and conditions</li>
+                        <li>💨 Wind speed and humidity information</li>
+                        <li>📅 5-day weather forecast</li>
+                        <li>♿ Responsive and accessible design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sanabu Islamic. All rights reserved.</p>
+            <p>Website: <a href="https://sanabuislamic.com">https://sanabuislamic.com</a></p>
+        </div>
+    </footer>
+
+    <script src="weather-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="joke-generator.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Sanabu Islamic</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="joke-generator.html">Joke Generator</a></li>
+                    <li><a href="weather-dashboard.html">Weather</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Random Joke Generator 😂</h2>
+                <p>Click the button below to get a random joke!</p>
+                
+                <div class="joke-container">
+                    <div class="joke-box">
+                        <p id="joke-text" class="joke-text">Click "Get Joke" to start laughing!</p>
+                        <p id="joke-type" class="joke-type"></p>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button id="get-joke-btn" class="btn btn-primary">Get Joke</button>
+                        <button id="get-programming-joke-btn" class="btn btn-secondary">Programming Joke</button>
+                        <button id="clear-btn" class="btn btn-tertiary">Clear</button>
+                    </div>
+                    
+                    <div id="loading" class="loading" style="display: none;">
+                        <p>Loading joke...</p>
+                    </div>
+                    
+                    <div id="error" class="error" style="display: none;">
+                        <p>Oops! Couldn't load the joke. Please try again.</p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>About This Joke Generator</h3>
+                    <p>This joke generator uses the <strong>JokeAPI</strong> external API to fetch random jokes. It supports multiple categories including:</p>
+                    <ul>
+                        <li>🎭 General Jokes</li>
+                        <li>💻 Programming Jokes</li>
+                        <li>🔞 Adult Jokes (optional)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sanabu Islamic. All rights reserved.</p>
+            <p>Website: <a href="https://sanabuislamic.com">https://sanabuislamic.com</a></p>
+        </div>
+    </footer>
+
+    <script src="joke-generator.js"></script>
+</body>
+</html>
