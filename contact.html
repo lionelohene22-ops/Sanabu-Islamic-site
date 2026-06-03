@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sanabu Islamic</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,11 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="joke-generator.html">Joke Generator</a></li>
+                    <li><a href="weather-dashboard.html">Weather</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,31 +29,96 @@
         <section class="content">
             <div class="container">
                 <h2>Contact Us</h2>
-                <p>We'd love to hear from you! Get in touch with us at:</p>
-                <div class="contact-info">
-                    <p>Email: info@sanabuislamic.com</p>
-                    <p>Website: <a href="https://sanabuislamic.com">https://sanabuislamic.com</a></p>
+                <p>We'd love to hear from you! Get in touch with us using the form below or our contact information.</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info-section">
+                        <h3>Contact Information</h3>
+                        <div class="info-box">
+                            <h4>📧 Email</h4>
+                            <p><a href="mailto:info@sanabuislamic.com">info@sanabuislamic.com</a></p>
+                            <p><a href="mailto:support@sanabuislamic.com">support@sanabuislamic.com</a></p>
+                        </div>
+                        <div class="info-box">
+                            <h4>📱 Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 123-4568 (Support)</p>
+                        </div>
+                        <div class="info-box">
+                            <h4>📍 Address</h4>
+                            <p>Sanabu Islamic Center<br>
+                            123 Islamic Way<br>
+                            Community City, ST 12345<br>
+                            United States</p>
+                        </div>
+                        <div class="info-box">
+                            <h4>🌐 Website</h4>
+                            <p><a href="https://sanabuislamic.com">sanabu islamic.com</a></p>
+                        </div>
+                        <div class="info-box">
+                            <h4>⏰ Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM (EST)<br>
+                            Saturday: 10:00 AM - 4:00 PM (EST)<br>
+                            Sunday: Closed</p>
+                        </div>
+                        <div class="social-section">
+                            <h4>Follow Us On Social Media</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">f</a>
+                                <a href="#" class="social-icon">𝕏</a>
+                                <a href="#" class="social-icon">📷</a>
+                                <a href="#" class="social-icon">▶️</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <form class="contact-form">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="course-inquiry">Course Inquiry</option>
+                                <option value="event-registration">Event Registration</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="general-inquiry">General Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                            
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="subscribe" name="subscribe">
+                                <label for="subscribe" style="display: inline; margin-left: 0.5rem;">Subscribe to our newsletter for updates and announcements</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </form>
+                    </div>
                 </div>
-                <form class="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Sanabu Islamic. All rights reserved.</p>
-            <p>Website: <a href="https://sanabuislamic.com">https://sanabuislamic.com</a></p>
+            <div style="text-align: center;">
+                <p>&copy; 2026 Sanabu Islamic. All rights reserved.</p>
+                <p>Website: <a href="https://sanabuislamic.com" style="color: #90EE90;">sanabu islamic.com</a></p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #ddd;">
+                    <strong>Website Created by:</strong> <span style="color: #90EE90;">Brempong Akwasi Pius</span> - Lead Website Creator
+                </p>
+            </div>
         </div>
     </footer>
 </body>
